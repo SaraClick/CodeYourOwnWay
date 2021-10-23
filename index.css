@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main,
+body {
+    background: rgb(230, 227, 227);
+}
+
+
+/*HEADER*/
+
+header {
+    background-image: url('images_icons/headerimage.jpg');
+    height: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    padding: 15px;
+}
+
+
+/*NAVIGATION: MAIN BAR AND SUBNAV BAR - Followed YouTube tutorial: https://www.youtube.com/watch?v=wHFflWvii3M*/
+
+
+/*Troubleshooted the issue of icons with https://stackoverflow.com/questions/24922833/fontawesome-icons-are-not-showing-why*/
+
+.navbar {
+    background: rgb(46, 40, 40);
+    text-align: center;
+}
+
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    color: honeydew;
+}
+
+.navbar ul li {
+    margin: 2px;
+    padding: 8px 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: honeydew;
+}
+
+
+/*Set the active page and hover in a different color*/
+
+.active {
+    background: rgb(133, 97, 69);
+    border-radius: 3px;
+}
+
+.navbar ul li:hover {
+    background: rgb(85, 74, 74);
+    border-radius: 3px;
+}
+
+
+/*To add space between navbar icons and their text*/
+
+.navbar .fa {
+    margin-right: 8px;
+}
+
+.submenu {
+    display: none;
+}
+
+
+/*Format of the submenu when hovering on the main navbar option*/
+
+.navbar ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    background: inherit;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+/*For the submenu to be shown vertically*/
+
+.navbar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+
+/*Formatting the submenu list*/
+
+.navbar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+/*To remove the dotted line from the last item*/
+
+.navbar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+
+/*Lighter hover color for submenu*/
+
+.navbar ul li:hover .submenu ul li:hover {
+    background: rgb(112, 98, 98);
+}
+
+.navbar .submenu .active {
+    background: rgb(133, 97, 69);
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: rgb(46, 40, 40);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer p {
+    color: whitesmoke;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*CONTACT PAGE*/
+
+.container {
+    background: silver;
+    width: fit-content;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-inline: auto;
+    align-content: center;
+    border-radius: 40px;
+}
+
+.container .subcontainer {
+    background: rgb(223, 221, 221);
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    align-content: center;
+    text-align: center;
+}
+
+
+/*Add space between title and text*/
+
+.container .subcontainer .contacttitle {
+    margin-bottom: 10px;
+    color: rgb(202, 94, 12);
+    text-decoration: underline;
+}
+
+
+/*Space between icon and title*/
+
+.container .subcontainer .contacttitle i {
+    margin-right: 10px;
+}
+
+
+/*Space between address and map & between map and container*/
+
+.container .subcontainer iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*TO BE DELETED: THIS HAS BEEN ADDED TO THE MAIN ONLY FOR VISUAL PURPOSES UNTIL CONTENT IS ADDED*/
+
+main .tobedeleted {
+    height: 800px;
+    padding: 80px;
+    text-align: center;
+}
