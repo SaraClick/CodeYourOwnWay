@@ -153,7 +153,7 @@ footer a {
 
 /*CONTACT PAGE*/
 
-.container {
+.c-container {
     background: silver;
     width: fit-content;
     padding: 60px;
@@ -164,7 +164,7 @@ footer a {
     border-radius: 40px;
 }
 
-.container .subcontainer {
+.c-container .c-subcontainer {
     background: rgb(223, 221, 221);
     padding: 15px;
     margin-bottom: 30px;
@@ -176,7 +176,7 @@ footer a {
 
 /*Add space between title and text*/
 
-.container .subcontainer .contacttitle {
+.c-container .c-subcontainer .c-contacttitle {
     margin-bottom: 10px;
     color: rgb(202, 94, 12);
     text-decoration: underline;
@@ -185,23 +185,119 @@ footer a {
 
 /*Space between icon and title*/
 
-.container .subcontainer .contacttitle i {
+.c-container .c-subcontainer .c-contacttitle i {
     margin-right: 10px;
 }
 
 
 /*Space between address and map & between map and container*/
 
-.container .subcontainer iframe {
+.c-container .c-subcontainer iframe {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-/*TO BE DELETED: THIS HAS BEEN ADDED TO THE MAIN ONLY FOR VISUAL PURPOSES UNTIL CONTENT IS ADDED*/
+/*Diana´s Code*/
 
-main .tobedeleted {
-    height: 800px;
-    padding: 80px;
-    text-align: center;
+​ ​
+/* CSS for Resources Page */
+
+​ .resources-title {
+    background: rgb(230, 227, 227);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center
+}
+
+​ .container-1 {
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+​ .container-2 {
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+​ .container-3 {
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+    border: 1px #ccc solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+​ .box-1 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-2 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-3 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+​ .box-4 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-5 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-6 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-7 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-8 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+.box-9 {
+    flex: 1;
+    flex-basis: 33.33%
+}
+
+@media screen and (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+    }
+    ​ .container-2 {
+        flex-direction: column;
+    }
+    .container-1 {
+        flex-direction: column;
+    }
 }
