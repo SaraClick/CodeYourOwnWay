@@ -30,10 +30,12 @@ header img {
 }
 
 
-/*NAVIGATION: MAIN BAR AND SUBNAV BAR - Followed YouTube tutorial: https://www.youtube.com/watch?v=wHFflWvii3M*/
+/*NAVIGATION: MAIN BAR AND SUBNAV BAR*/
 
 
-/*Troubleshooted the issue of icons with https://stackoverflow.com/questions/24922833/fontawesome-icons-are-not-showing-why*/
+/* Followed YouTube tutorial: https://www.youtube.com/watch?v=wHFflWvii3M
+
+Troubleshooted the issue of icons with https://stackoverflow.com/questions/24922833/fontawesome-icons-are-not-showing-why */
 
 .navbar {
     background: rgb(46, 40, 40);
@@ -154,29 +156,51 @@ footer a {
 /*CONTACT PAGE*/
 
 .c-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.c-subcontainer {
     background: silver;
-    width: fit-content;
-    padding: 60px;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    margin-inline: auto;
-    align-content: center;
+    display: inherit;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: inherit;
+    gap: 15px;
     border-radius: 40px;
+    width: 800px;
+    min-width: 100px;
 }
 
-.c-container .c-subcontainer {
+.c-box {
     background: rgb(223, 221, 221);
-    padding: 15px;
-    margin-bottom: 30px;
     border-radius: 40px;
-    align-content: center;
     text-align: center;
+    min-width: 150px;
+    width: 90%;
+    padding: 2%;
 }
 
 
-/*Add space between title and text*/
+/*Add spaces between the top/bottom boxes and its subcontainer*/
 
-.c-container .c-subcontainer .c-contacttitle {
+.c-container .c-subcontainer .c-box:first-child {
+    margin-top: 15px;
+}
+
+.c-container .c-subcontainer .c-box:last-child {
+    margin-bottom: 15px;
+}
+
+
+/*Add space between title and text and text color, decoration*/
+
+.c-contacttitle {
     margin-bottom: 10px;
     color: rgb(202, 94, 12);
     text-decoration: underline;
@@ -190,114 +214,117 @@ footer a {
 }
 
 
-/*Space between address and map & between map and container*/
+/*Adjustment to the map*/
 
-.c-container .c-subcontainer iframe {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.c-container .c-subcontainer .c-box iframe {
+    width: 98%;
+    border-radius: 40px;
+    margin-top: 2%;
 }
 
 
-/*Diana´s Code*/
+/* RESOURCES PAGE*/
 
-​ ​
-/* CSS for Resources Page */
-
-​ .resources-title {
+​ ​ .resources-title {
     background: rgb(230, 227, 227);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center
 }
 
-​ .container-1 {
+​
+/* "align-items: stretch" used to get equal heights for boxes */
+
+.r-container-1 {
     width: 100%;
     background: white;
     flex-direction: row;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: center;
 }
 
-​ .container-2 {
+​ .r-container-2 {
     width: 100%;
     background: white;
     flex-direction: row;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: center;
 }
 
-​ .container-3 {
+​ .r-container-3 {
     width: 100%;
     background: white;
     flex-direction: row;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: center;
 }
 
-.container-1 div,
-.container-2 div,
-.container-3 div {
-    border: 1px #ccc solid;
+.r-container-1 div,
+.r-container-2 div,
+.r-container-3 div {
+    width: 300px;
+    border: 10px #ccc dotted;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 50px;
+    margin: 30px;
     box-sizing: border-box;
 }
 
-​ .box-1 {
+​ .r-box-1 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-2 {
+.r-box-2 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-3 {
+.r-box-3 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-​ .box-4 {
+​ .r-box-4 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-5 {
+.r-box-5 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-6 {
+.r-box-6 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-7 {
+.r-box-7 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-8 {
+.r-box-8 {
     flex: 1;
     flex-basis: 33.33%
 }
 
-.box-9 {
+.r-box-9 {
     flex: 1;
     flex-basis: 33.33%
 }
 
 @media screen and (max-width: 768px) {
-    .container-1 {
+    .r-container-1 {
         flex-direction: column;
     }
-    ​ .container-2 {
+    ​ .r-container-2 {
         flex-direction: column;
     }
-    .container-1 {
+    .r-container-3 {
         flex-direction: column;
     }
 }
