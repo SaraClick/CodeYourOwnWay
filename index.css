@@ -492,3 +492,8 @@ html {
     padding: 10px;
     margin: 10px;
 }
+
+.p-icon {
+    width: 3rem;
+    margin-right: 5px;
+}
