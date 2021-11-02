@@ -397,8 +397,8 @@ html {
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
     background-color: #000;
+    color: white;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -413,6 +413,11 @@ html {
         width: 100%;
         display: block;
     }
+}
+
+.i-button a {
+    text-decoration: none;
+    color: white;
 }
 
 
