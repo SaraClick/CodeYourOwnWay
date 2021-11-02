@@ -225,25 +225,14 @@ footer a {
 
 /*------RESOURCES PAGE------*/
 
-​ ​ .resources-title {
+.resources-title{
     background: rgb(230, 227, 227);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center
+    text-align:center
 }
 
-​ ​
 /* "align-items: stretch" used to get equal heights for boxes */
-
-​ .resources-title {
-    background: rgb(230, 227, 227);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center
-}
-
-​
-/* "align-items: stretch" used to get equal heights for boxes */
-
-.r-container {
+.r-container-1 {
     width: 100%;
     background: white;
     flex-direction: row;
@@ -252,23 +241,89 @@ footer a {
     justify-content: center;
 }
 
-.r-container div {
+.r-container-2{
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.r-container-3{
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+  
+.r-container-1 div, .r-container-2 div, .r-container-3 div{
     width: 300px;
-    border: 10px #ccc dotted;
+    border:10px #ccc dotted;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 50px;
     margin: 30px;
     box-sizing: border-box;
-}
+  }
 
-​ .r-box {
+.r-box-1 {
     flex: 1;
-    flex-basis: 33.33%
+    flex-basis:33.33%
+}
+  
+.r-box-2 {
+    flex: 1;
+    flex-basis:33.33%
+}
+  
+.r-box-3 {
+    flex: 1;
+    flex-basis:33.33%
 }
 
+.r-box-4 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
+.r-box-5 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
+.r-box-6 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
+.r-box-7 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
+.r-box-8 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
+.r-box-9 {
+    flex:1;
+    flex-basis:33.33%
+}
+  
 @media screen and (max-width: 768px) {
-    .r-container {
-        flex-direction: column;
+   .r-container-1{
+       flex-direction: column;
+    }
+
+   .r-container-2{
+    flex-direction: column;
+    }
+    
+    .r-container-3{
+    flex-direction: column;
     }
 }
 
