@@ -225,12 +225,25 @@ footer a {
 
 /*------RESOURCES PAGE------*/
 
+/*Add space between nav bar & title*/
+
+.r-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;   
+}
+
 .resources-title {
     background: rgb(230, 227, 227);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center
 }
 
+/*Add space between resources title blurb & list of resources below*/
+
+.r-tblurb{
+    margin-bottom: 30px;
+}
 
 /* "align-items: stretch" used to get equal heights for boxes */
 
@@ -271,6 +284,10 @@ footer a {
     margin: 20px;
     box-sizing: border-box;
 }
+
+/*To streamline CSS, we tried creating 2 main classes 
+(r-box and r-container) but did not display 3 images 
+side by side - why is this?*/
 
 .r-box-1 {
     flex: 1;
@@ -316,6 +333,9 @@ footer a {
     flex: 1;
     flex-basis: 33.33%
 }
+
+/*On screens that are 650px wide or less, display 
+list of resources in a column style*/
 
 @media screen and (max-width: 650px) {
     .r-container-1 {
