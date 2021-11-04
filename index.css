@@ -132,6 +132,27 @@ Troubleshooted the issue of icons with https://stackoverflow.com/questions/24922
 }
 
 
+/*Make the whole navbar visible in phones and other devices - WORKING PROGRESS*/
+
+@media screen and (max-width: 650px) {
+    .navbar ul {
+        display: inline-flex;
+        width: 100%;
+    }
+    /*Reduce the margins and paddings so the menu does not take so much space in the screen*/
+    .navbar ul li {
+        margin: 3px;
+        padding: 3px 10px;
+    }
+    .navbar ul li:hover .submenu ul {
+        margin: 2px;
+    }
+    .navbar ul li:hover .submenu ul li {
+        padding: 5px;
+    }
+}
+
+
 /*------FOOTER------*/
 
 footer {
