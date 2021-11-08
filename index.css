@@ -548,3 +548,10 @@ html {
     width: 3rem;
     margin-right: 5px;
 }
+
+@media screen and (max-width: 650px) {
+    .p-videos {
+        width: 100%;
+        display: block;
+    }
+}
