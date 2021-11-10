@@ -15,26 +15,30 @@
 
 <body>
     <header>
-        <a href="index.html" class="pagelogo"><img src="images_icons\logo_grey_short.png" alt="Code Your Own Way" title="Code Your Own Way"></a>
+        <div class="h-container">
+            <nav class="navbar">
+                <a href="index.html" class="pagelogo"><img src="images_icons\logo_grey_short.png" alt="Code Your Own Way" title="Code Your Own Way"></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa fa-bars" aria-hidden="true"></i> 
+                </button>
+                <ul class="navbar-ul" id="navbar-ul">
+                    <!--id needed for JS-->
+                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-user"></i>Profiles</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="profile1.html"><i class="fa fa-female" aria-hidden="true"></i>Jessica Chan</a></li>
+                                <li><a href="profile2.html"><i class="fa fa-female" aria-hidden="true"></i>Susan Wojcicki</a></li>
+                                <li><a href="profile3.html"><i class="fa fa-female" aria-hidden="true"></i>Kimberly Bryant</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="resources.html"><i class="fa fa-tasks"></i>Resources</a></li>
+                    <li><a href="contact.html"><i class="fa fa-mobile" aria-hidden="true"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-            <li class="active"><a href="#"><i class="fa fa-user"></i>Profiles</a>
-                <div class="submenu">
-                    <ul>
-                        <li><a href="profile1.html"><i class="fa fa-female" aria-hidden="true"></i>Jessica Chan</a></li>
-                        <li><a href="profile2.html"><i class="fa fa-female" aria-hidden="true"></i>Susan Wojcicki</a></li>
-                        <li><a href="profile3.html"><i class="fa fa-female" aria-hidden="true"></i>Kimberly Bryant</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="resources.html"><i class="fa fa-tasks"></i>Resources</a></li>
-            <li><a href="contact.html"><i class="fa fa-mobile" aria-hidden="true"></i>Contact</a></li>
-        </ul>
-    </div>
-
 
     <main>
 
@@ -66,7 +70,7 @@
             </div>
             ​ ​
             <div class="p-subcontainer">
-                <h2>Why Is She Known? Impacts/Works</h2>
+                <h2><img src="images_icons\knownFor.png" alt="Icon of light bulb for known for section" class="p-icon">Why Is She Known? Impacts/Works</h2>
                 ​ ​
                 <div class="p-subcontent">
                     <ul>
@@ -79,7 +83,7 @@
             ​ ​ ​
             <div class="p-subcontainer">
                 ​
-                <h2>Links To Her Works/Interesting Facts</h2>
+                <h2><img src="images_icons\linksFacts.png" alt="Icon of notes for links and facts section" class="p-icon">Links To Her Works/Interesting Facts</h2>
                 ​ ​​
                 <div class="p-subcontent">
                     <ul>
@@ -92,6 +96,8 @@
         </div>
         ​
     </main>
+
+    <script src="hamburger.js"></script>
 
 </body>
 
