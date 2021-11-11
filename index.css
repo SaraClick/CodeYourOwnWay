@@ -85,7 +85,7 @@ Troubleshooted the issue of icons with https://stackoverflow.com/questions/24922
 
 /*To add space between navbar icons and their text*/
 
-.navbar .fa {
+.navbar .navbar-icon {
     margin-right: 8px;
 }
 
