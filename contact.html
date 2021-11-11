@@ -6,40 +6,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" type="text/css">
-    <!--For the below I followed the tutorial https://www.youtube.com/watch?v=wHFflWvii3M-->
-    <!--and troubleshooted the issue of icons with https://stackoverflow.com/questions/24922833/fontawesome-icons-are-not-showing-why-->
-    <!--Using the navigation logos from https://fontawesome.com/v4.7/icons/-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="icon" href="images_icons\logoimageonly.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
+        <!--For the navbar I followed the tutorial https://www.youtube.com/watch?v=wHFflWvii3M
+        and inserted the icons using this https://www.youtube.com/watch?v=or7amkb0Pk8&t=280s
+        taking the logos from https://iconify.design/ due to issues encountered using cnd icons-->
         <div class="h-container">
             <nav class="navbar">
                 <a href="index.html" class="pagelogo"><img src="images_icons\logo_grey_short.png" alt="Code Your Own Way" title="Code Your Own Way"></a>
                 <button class="hamburger" id="hamburger">
-                    <i class="fa fa-bars" aria-hidden="true"></i> 
+                    <svg class="hamb-icon"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="1.2em" height="1em" viewBox="0 0 1536 1280">
+                    <path d="M1536 1088v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 704V576q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1408q26 0 45 19t19 45z"/>
+                    </svg>
                 </button>
                 <ul class="navbar-ul" id="navbar-ul">
                     <!--id needed for JS-->
                     <li>
                         <a href="index.html">
                             <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="1.13em" height="1em" viewBox="0 0 576 512">
-                        <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" fill="currentColor"/></svg>Home</a>
+                            <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" fill="currentColor"/>
+                            </svg>Home</a>
                     </li>
-                    <li><a href="#"><i class="fa fa-user"></i>Profiles</a>
+                    <li>
+                        <a href="#">
+                            <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" viewBox="0 0 448 512">
+                            <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" fill="currentColor"/>
+                            </svg>Profiles</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="profile1.html"><i class="fa fa-female" aria-hidden="true"></i>Jessica Chan</a></li>
-                                <li><a href="profile2.html"><i class="fa fa-female" aria-hidden="true"></i>Susan Wojcicki</a></li>
-                                <li><a href="profile3.html"><i class="fa fa-female" aria-hidden="true"></i>Kimberly Bryant</a></li>
+                                <li>
+                                    <a href="profile1.html">
+                                        <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1em" viewBox="0 0 256 512">
+                                    <path d="M128 0c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64S92.654 0 128 0m119.283 354.179l-48-192A24 24 0 0 0 176 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H80a24 24 0 0 0-23.283 18.179l-48 192C4.935 369.305 16.383 384 32 384h56v104c0 13.255 10.745 24 24 24h32c13.255 0 24-10.745 24-24V384h56c15.591 0 27.071-14.671 23.283-29.821z" fill="currentColor"/>
+                                    </svg>Jessica Chan</a>
+                                </li>
+                                <li>
+                                    <a href="profile2.html">
+                                        <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1em" viewBox="0 0 256 512">
+                                    <path d="M128 0c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64S92.654 0 128 0m119.283 354.179l-48-192A24 24 0 0 0 176 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H80a24 24 0 0 0-23.283 18.179l-48 192C4.935 369.305 16.383 384 32 384h56v104c0 13.255 10.745 24 24 24h32c13.255 0 24-10.745 24-24V384h56c15.591 0 27.071-14.671 23.283-29.821z" fill="currentColor"/>
+                                    </svg>Susan Wojcicki</a>
+                                </li>
+                                <li>
+                                    <a href="profile3.html">
+                                        <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1em" viewBox="0 0 256 512">
+                                    <path d="M128 0c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64S92.654 0 128 0m119.283 354.179l-48-192A24 24 0 0 0 176 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H80a24 24 0 0 0-23.283 18.179l-48 192C4.935 369.305 16.383 384 32 384h56v104c0 13.255 10.745 24 24 24h32c13.255 0 24-10.745 24-24V384h56c15.591 0 27.071-14.671 23.283-29.821z" fill="currentColor"/>
+                                    </svg>Kimberly Bryant</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="resources.html"><i class="fa fa-tasks"></i>Resources</a></li>
-                    <li class="active"><a href="contact.html"><i class="fa fa-mobile" aria-hidden="true"></i>Contact</a></li>
+                    <li>
+                        <a href="resources.html">
+                            <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200">
+                        <path d="M0 131.213v234.375h1200V131.213H0zm752.856 58.009h385.62v118.359h-385.62V189.222zM0 482.849v234.375h1200V482.85L0 482.849zm487.72 58.008h650.757v118.358H487.72V540.857zM0 834.412v234.375h1200V834.412H0zm894.946 58.008h243.529v118.359H894.946V892.42z" fill="currentColor"/>
+                        </svg>Resources</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">
+                            <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <g fill="currentColor">
+                        <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0a1 1 0 0 0 2 0z"/></g>
+                        </svg>Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -49,17 +83,25 @@
         <div class="c-container">
             <div class="c-subcontainer">
                 <div class="c-box">
-                    <h4 class="c-contacttitle"><i class="fa fa-phone" aria-hidden="true"></i>Phone</h4>
+                    <h4 class="c-contacttitle">
+                        <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" fill="currentColor"/>
+                    </svg>Phone</h4>
                     <p>012345 67899</p>
                 </div>
 
                 <div class="c-box">
-                    <h4 class="c-contacttitle"><i class="fa fa-envelope" aria-hidden="true"></i>Email</h4>
+                    <h4 class="c-contacttitle">
+                        <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path d="M14.608 12.172c0 .84.239 1.175.864 1.175c1.393 0 2.28-1.775 2.28-4.727c0-4.512-3.288-6.672-7.393-6.672c-4.223 0-8.064 2.832-8.064 8.184c0 5.112 3.36 7.896 8.52 7.896c1.752 0 2.928-.192 4.727-.792l.386 1.607c-1.776.577-3.674.744-5.137.744c-6.768 0-10.393-3.72-10.393-9.456c0-5.784 4.201-9.72 9.985-9.72c6.024 0 9.215 3.6 9.215 8.016c0 3.744-1.175 6.6-4.871 6.6c-1.681 0-2.784-.672-2.928-2.161c-.432 1.656-1.584 2.161-3.145 2.161c-2.088 0-3.84-1.609-3.84-4.848c0-3.264 1.537-5.28 4.297-5.28c1.464 0 2.376.576 2.782 1.488l.697-1.272h2.016v7.057h.002zm-2.951-3.168c0-1.319-.985-1.872-1.801-1.872c-.888 0-1.871.719-1.871 2.832c0 1.68.744 2.616 1.871 2.616c.792 0 1.801-.504 1.801-1.896v-1.68z" fill="currentColor"/>
+                    </svg>Email</h4>
                     <p>info@codeyourownway.com</p>
                 </div>
 
                 <div class="c-box">
-                    <h4 class="c-contacttitle"><i class="fa fa-map-marker" aria-hidden="true"></i></i>Address</h4>
+                    <h4 class="c-contacttitle">
+                        <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" x width="1em" height="1em" viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path d="M12 21a29.776 29.776 0 0 1-3.5-3.531C6.9 15.558 5 12.712 5 10a7 7 0 0 1 11.952-4.951A6.955 6.955 0 0 1 19 10c0 2.712-1.9 5.558-3.5 7.469A29.777 29.777 0 0 1 12 21zm0-14a3 3 0 1 0 0 6a3 3 0 0 0 0-6z" fill="currentColor"/></g>
+                    </svg>Address</h4>
                     <p>Code Your Own way</p>
                     <p>10 Queen Street Place</p>
                     <p>London, EC4R 1BE</p>

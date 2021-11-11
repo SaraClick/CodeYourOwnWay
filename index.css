@@ -151,8 +151,13 @@ following the tutorial: https://youtu.be/ydZc17rlR5E*/
     border: 0;
     display: none;
     color: honeydew;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
+}
+
+.hamburger .hamb-icon {
+    margin-right: 15px;
+    fill: honeydew;
 }
 
 .hamburger:focus {
@@ -260,8 +265,8 @@ footer a {
 
 /*Space between icon and title*/
 
-.c-container .c-subcontainer .c-contacttitle i {
-    margin-right: 10px;
+.c-container .c-subcontainer .c-contacttitle .c-icon {
+    margin-right: 5px;
 }
 
 
@@ -390,10 +395,10 @@ side by side - why is this?*/
 }
 
 
-/*On screens that are 650px wide or less, display 
+/*On screens that are 768px wide or less, display 
 list of resources in a column style*/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .r-container-1 {
         flex-direction: column;
     }
@@ -485,7 +490,7 @@ html {
     background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .i-column {
         width: 100%;
         display: block;
@@ -580,7 +585,7 @@ html {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .p-videos {
         width: 100%;
         display: block;
